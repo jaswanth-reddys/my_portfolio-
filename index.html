@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jaswanth Reddy - B.Tech Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8fafc;
+      color: #334155;
+    }
+    .container-padding { padding: 2rem 1rem; }
+    @media (min-width: 768px) {
+      .container-padding { padding: 3rem 2rem; }
+    }
+    .section-heading {
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 2rem;
+      position: relative;
+      display: inline-block;
+    }
+    .section-heading::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      width: 60px;
+      height: 4px;
+      background-color: #0ea5e9;
+      border-radius: 2px;
+    }
+    .card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      padding: 1.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      background-color: #0ea5e9;
+      color: white;
+      font-weight: 600;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      text-decoration: none;
+    }
+    .btn-primary:hover {
+      background-color: #0284c7;
+      transform: translateY(-2px);
+    }
+    .icon-link { transition: color 0.3s ease; }
+    .icon-link:hover { color: #0ea5e9; }
+  </style>
+</head>
+<body class="antialiased scroll-smooth">
+
+  <!-- Navigation Bar -->
+  <nav class="fixed top-0 w-full bg-white shadow z-50">
+    <div class="max-w-4xl mx-auto flex justify-between items-center px-4 py-3">
+      <a href="#" class="text-xl font-bold text-blue-600">Jaswanth Reddy</a>
+      <div class="space-x-4 text-sm font-medium">
+        <a href="#about" class="text-gray-700 hover:text-blue-500">About</a>
+        <a href="#skills" class="text-gray-700 hover:text-blue-500">Skills</a>
+        <a href="#projects" class="text-gray-700 hover:text-blue-500">Projects</a>
+        <a href="#education-experience" class="text-gray-700 hover:text-blue-500">Education</a>
+        <a href="#contact" class="text-gray-700 hover:text-blue-500">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <div class="pt-20"></div>
+
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-blue-600 to-cyan-500 text-white py-12 md:py-16 rounded-b-2xl shadow-lg">
+    <div class="max-w-4xl mx-auto text-center container-padding">
+      <img src="https://placehold.co/150x150/0ea5e9/ffffff?text=JR" alt="Jaswanth Reddy" class="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-white shadow-md object-cover"/>
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-2">Jaswanth Reddy</h1>
+      <p class="text-xl md:text-2xl font-light opacity-90">Aspiring Full Stack Developer | Python Programmer</p>
+      <div class="mt-6">
+        <a href="resume.pdf" target="_blank" class="btn-primary">Download Resume</a>
+      </div>
+      <div class="mt-8 flex justify-center space-x-6">
+        <a href="mailto:jaswanthofficial1123@gmail.com" class="text-white hover:text-gray-200 text-2xl icon-link"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/jaswanth-reddy-059a20257/" target="_blank" class="text-white hover:text-gray-200 text-2xl icon-link"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/jaswanth-reddys" target="_blank" class="text-white hover:text-gray-200 text-2xl icon-link"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Me -->
+  <section id="about" class="py-12 md:py-16">
+    <div class="max-w-4xl mx-auto container-padding">
+      <h2 class="section-heading">About Me</h2>
+      <p class="text-lg leading-relaxed text-gray-700">
+        I am a B.Tech student in Computer Science Engineering at QIS College of Engineering and Technology, expected to graduate in 2025. I am passionate about full-stack development and automation using Python. I enjoy turning complex problems into simple, beautiful, and intuitive designs. When I'm not coding, I explore tech tutorials and stay updated with emerging technologies. I'm eager to contribute to real-world projects and enhance my professional skills.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="bg-gray-50 py-12 md:py-16 rounded-xl shadow-inner">
+    <div class="max-w-4xl mx-auto container-padding">
+      <h2 class="section-heading">Skills</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card">
+          <h3 class="text-xl font-semibold text-gray-800 mb-4"><i class="fas fa-code mr-3 text-blue-500"></i>Technical Skills</h3>
+          <ul class="list-disc list-inside space-y-2 text-gray-700">
+            <li>Python, C</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>SQL, MySQL</li>
+            <li>Object-Oriented Programming</li>
+            <li>Data Structures & Algorithms</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 class="text-xl font-semibold text-gray-800 mb-4"><i class="fas fa-users mr-3 text-green-500"></i>Soft Skills</h3>
+          <ul class="list-disc list-inside space-y-2 text-gray-700">
+            <li>Problem Solving</li>
+            <li>Team Collaboration</li>
+            <li>Time Management</li>
+            <li>Continuous Learning</li>
+            <li>Critical Thinking</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3 class="text-xl font-semibold text-gray-800 mb-4"><i class="fas fa-tools mr-3 text-purple-500"></i>Tools & Technologies</h3>
+          <ul class="list-disc list-inside space-y-2 text-gray-700">
+            <li>Git & GitHub</li>
+            <li>VS Code</li>
+            <li>MySQL Workbench</li>
+            <li>Jupyter Notebook</li>
+            <li>Postman</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-12 md:py-16">
+    <div class="max-w-4xl mx-auto container-padding">
+      <h2 class="section-heading">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Project 1 -->
+        <div class="card">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-2">Student Management System</h3>
+          <p class="text-sm text-gray-500 mb-3">Technologies: Python, Tkinter, MySQL</p>
+          <p class="text-gray-700 mb-4">Developed a desktop-based application to manage student details including CRUD operations, with GUI built using Tkinter and database connectivity via MySQL.</p>
+          <div class="flex flex-wrap gap-3">
+            <a href="https://github.com/jaswanth-reddys/Student-Management-System" target="_blank" class="btn-primary text-sm">
+              <i class="fab fa-github mr-2"></i>GitHub
+            </a>
+          </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="card">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-2">Weather App</h3>
+          <p class="text-sm text-gray-500 mb-3">Technologies: Python, Tkinter, Weather API</p>
+          <p class="text-gray-700 mb-4">Created a user-friendly GUI-based application that fetches real-time weather data using an external API and displays temperature, humidity, and other weather conditions.</p>
+          <div class="flex flex-wrap gap-3">
+            <a href="https://github.com/jaswanth-reddys/Weather-App" target="_blank" class="btn-primary text-sm">
+              <i class="fab fa-github mr-2"></i>GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education-experience" class="bg-gray-50 py-12 md:py-16 rounded-xl shadow-inner">
+    <div class="max-w-4xl mx-auto container-padding">
+      <h2 class="section-heading">Education</h2>
+      <div class="card">
+        <h3 class="text-xl font-medium text-gray-800 mb-2">B.Tech in Computer Science and Engineering</h3>
+        <p class="text-gray-600">QIS College of Engineering and Technology, Ongole</p>
+        <p class="text-sm text-gray-500">Expected Graduation: 2025</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-12 md:py-16 bg-blue-600 text-white rounded-t-2xl shadow-lg">
+    <div class="max-w-4xl mx-auto text-center container-padding">
+      <h2 class="section-heading text-white">Get In Touch</h2>
+      <p class="text-lg mb-8 opacity-90">I'm actively looking for opportunities in web development and software engineering. Let's connect!</p>
+      <a href="mailto:jaswanthofficial1123@gmail.com" class="btn-primary bg-white text-blue-600 hover:bg-gray-100">
+        <i class="fas fa-paper-plane mr-2"></i>Email Me
+      </a>
+      <div class="mt-8 flex justify-center space-x-6">
+        <a href="jaswanthreddy2028116@gmail.com" class="text-white hover:text-gray-200 text-2xl icon-link"><i class="fas fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/jaswanth-reddy-059a20257/" target="_blank" class="text-white hover:text-gray-200 text-2xl icon-link"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/jaswanth-reddys" target="_blank" class="text-white hover:text-gray-200 text-2xl icon-link"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-6 text-center">
+    <div class="max-w-4xl mx-auto container-padding">
+      <p>&copy; <span id="current-year"></span> Jaswanth Reddy. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
