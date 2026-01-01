@@ -9,6 +9,7 @@ const projects = [
     tech: ["Python", "FastAPI", "AI Agents", "MedGemma", "PDF Generation"],
     icon: Brain,
     gradient: "from-primary to-cyan-400",
+    github: "https://github.com/jaswanth-reddys/Multi-Agent-AI-System-for-Cancer-Detection-and-Automated-Diagnostic-Reporting-Using-MedGemma-4B-IT",
     highlights: [
       "Multi-agent architecture for specialized analysis",
       "Custom AI scoring framework for malignancy risk",
@@ -23,6 +24,7 @@ const projects = [
     tech: ["Python", "YOLOv8", "OpenCV", "PyTorch"],
     icon: Apple,
     gradient: "from-green-400 to-emerald-500",
+    github: "https://github.com/jaswanth-reddys/MiniProject",
     highlights: [
       "Real-time object detection and classification",
       "Custom-labeled dataset with multiple categories",
@@ -37,6 +39,7 @@ const projects = [
     tech: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Bootstrap"],
     icon: Film,
     gradient: "from-accent to-pink-500",
+    github: "https://github.com/jaswanth-reddys/Movieticketbooking",
     highlights: [
       "Interactive 3D theater view",
       "30% faster load times with optimized SQL",
@@ -108,13 +111,11 @@ const ProjectsSection = () => {
 
                 {/* Actions */}
                 <div className="flex gap-3">
-                  <Button variant="outline" size="sm">
-                    <Github size={16} />
-                    View Code
-                  </Button>
-                  <Button variant="glass" size="sm">
-                    <ExternalLink size={16} />
-                    Live Demo
+                  <Button variant="outline" size="sm" asChild>
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
+                      <Github size={16} />
+                      View Code
+                    </a>
                   </Button>
                 </div>
               </div>
