@@ -45,7 +45,7 @@ const HeroSection = () => {
             {/* Social Links */}
             <div className="flex gap-4 mt-8 justify-center lg:justify-start opacity-0 animate-slide-up animation-delay-800">
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/jaswanth-reddy-059a20257"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full glass flex items-center justify-center hover:border-primary/50 hover:text-primary transition-all duration-300"
@@ -53,7 +53,7 @@ const HeroSection = () => {
                 <Linkedin size={20} />
               </a>
               <a
-                href="https://github.com"
+                href="https://github.com/jaswanth-reddys"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 rounded-full glass flex items-center justify-center hover:border-primary/50 hover:text-primary transition-all duration-300"
