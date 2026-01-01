@@ -87,7 +87,7 @@ const HeroSection = () => {
               {/* Floating Elements */}
               <div className="absolute -top-4 -right-4 w-24 h-24 glass rounded-2xl flex items-center justify-center animate-float animation-delay-200">
                 <div className="text-center">
-                  <p className="text-2xl font-bold text-primary">3+</p>
+                  <p className="text-2xl font-bold text-primary">5+</p>
                   <p className="text-xs text-muted-foreground">Projects</p>
                 </div>
               </div>
