@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
-import portfolioLogo from "@/portfolio.jpg";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -35,7 +34,7 @@ const Navbar = () => {
           className="flex items-center gap-2"
         >
           <img 
-            src={portfolioLogo} 
+            src="/portfolio.jpg" 
             alt="Portfolio Logo" 
             className="h-8 w-8 rounded-full object-cover"
           />
