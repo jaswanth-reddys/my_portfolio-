@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
+import portfolioLogo from "@/portfolio.jpg";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -31,9 +32,14 @@ const Navbar = () => {
       <div className="container mx-auto px-6 flex items-center justify-between">
         <a
           href="#"
-          className="font-display text-2xl font-bold text-gradient"
+          className="flex items-center gap-2"
         >
-          JR
+          <img 
+            src={portfolioLogo} 
+            alt="Portfolio Logo" 
+            className="h-8 w-8 rounded-full object-cover"
+          />
+          <span className="font-display text-xl font-bold text-gradient hidden sm:inline">JR</span>
         </a>
 
         {/* Desktop Navigation */}
