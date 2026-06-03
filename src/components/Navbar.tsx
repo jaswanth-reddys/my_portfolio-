@@ -31,14 +31,9 @@ const Navbar = () => {
       <div className="container mx-auto px-6 flex items-center justify-between">
         <a
           href="#"
-          className="flex items-center gap-2"
+          className="font-display text-2xl font-bold text-gradient"
         >
-          <img 
-            src="/portfolio.jpg" 
-            alt="Portfolio Logo" 
-            className="h-8 w-8 rounded-full object-cover"
-          />
-          <span className="font-display text-xl font-bold text-gradient hidden sm:inline">JR</span>
+          JR
         </a>
 
         {/* Desktop Navigation */}
